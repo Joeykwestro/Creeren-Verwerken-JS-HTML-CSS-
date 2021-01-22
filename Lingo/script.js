@@ -81,12 +81,12 @@ function blokjes(parentElement, kolom, rij) {
     for (var k = 1; k <= kolom; k++) {
 
         for (var p = 1; p <= rij; p++) {
-            var cid = document.createElement("div")
+            var blokjes = document.createElement("div")
             var white = getID("white");
-            white.appendChild(cid)
-            cid.setAttribute("class", "vierkant")
-            cid.setAttribute("id", "r" + k + "k" + p)
-            cid.innerHTML  = "&nbsp;" ;
+            white.appendChild(blokjes)
+            blokjes.setAttribute("class", "vierkant")
+            blokjes.setAttribute("id", "r" + k + "k" + p)
+            blokjes.innerHTML  = "&nbsp;" ;
 
 
         }
